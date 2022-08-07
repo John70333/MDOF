@@ -36,6 +36,7 @@ for i = 1:n
     plot(ti,xt3(i,:),'linewidth',1.5);
     plot(ti,xt4(i,:),'linewidth',1.5);
     legend('undamped','damped','location','ne');
+    saveas(gcf,sprintf('%ddof%d.png',n,i));
 end
 %%
 function [l,u,xt,vt] = draw(n,J,C,K,x0,v0,f,ti)
