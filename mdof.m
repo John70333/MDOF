@@ -28,11 +28,15 @@ for i = 1:n
     figure('windowstate','maximize');
     subplot(2,1,1); hold on; grid on;
     title('Free vibrations');
+    xlabel('time');
+    ylabel('displacement');
     plot(ti,xt1(i,:),'linewidth',1.5);
     plot(ti,xt2(i,:),'linewidth',1.5);
     legend('undamped','damped','location','ne');
     subplot(2,1,2); hold on; grid on;
     title('Forced vibrations');
+    xlabel('time');
+    ylabel('displacement');
     plot(ti,xt3(i,:),'linewidth',1.5);
     plot(ti,xt4(i,:),'linewidth',1.5);
     legend('undamped','damped','location','ne');
